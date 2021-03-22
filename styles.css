@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  color: hsl(210, 10%, 33%);
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(./images/bg-header-desktop.png) no-repeat center center/cover;
+  padding: 4rem 1rem;
+  margin: 0 auto;
+}
+
+.hero .logo {
+  width: 100px;
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.hero p {
+  margin-top: 0.5rem;
+  text-align: center;
+  width: 40%;
+}
+
+.buttons {
+  margin-top: 2rem;
+}
+
+.buttons .btn {
+  display: inline-block;
+  border: 1px #ccc solid;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+}
+
+.btn.btn-primary {
+  background-color: hsl(171, 66%, 44%);
+  color: #ffffff;
+}
+
+.btn.btn-secondary {
+  background-color: hsl(233, 100%, 69%);
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(210, 10%, 33%);
+}
+
+#track {
+  margin-top: 4rem;
+}
+
+#track h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#track-paragraph {
+  margin-top: 0.5rem;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+.flex {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+}
+
+.flex img {
+  transform: translateX(-100px);
+  width: 700px;
+}
+
+.content {
+  width: 30%;
+}
+
+.content .content-item {
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.content .content-item h3 {
+  margin-bottom: 0.5rem;
+}
+
+#clipboard {
+  margin-top: 4rem;
+}
+
+#clipboard h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#clipboard-paragraph {
+  margin-top: 0.5rem;
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#clipboard .image-device {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#clipboard .image-device img {
+  width: 700px;
+}
+
+#work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+#work h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#work-paragraph {
+  margin-top: 0.5rem;
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.column-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 1rem;
+}
+
+.column-content {
+  width: 100%;
+  text-align: center;
+}
+
+.sponsors {
+  margin-top: 2rem;
+  padding: 3rem 5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.ios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 1rem;
+  margin: 0 auto;
+}
+
+.ios h1 {
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.ios p {
+  margin-top: 0.5rem;
+  text-align: center;
+  width: 40%;
+}
+
+footer {
+  background-color: hsl(201, 11%, 66%);
+  padding: 2rem 4rem;
+}
+
+footer.logo {
+  width: 50px;
+  margin-bottom: 1.5rem;
+}
+
+footer .logo img {
+  margin-left: 3rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  grid-column: 2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero {
+    padding: 5rem 2rem;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 2rem;
+  }
+
+  .hero p {
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .buttons {
+    width: 80%;
+  }
+
+  .buttons .btn {
+    outline: none;
+    appearance: none;
+    display: inline-block;
+    width: 100%;
+    margin: 0.5rem;
+    text-align: center;
+    border-radius: 30px;
+    padding: 1rem 0.5rem;
+  }
+
+  #track {
+    margin-top: 2rem;
+  }
+
+  #track h2 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  #track-paragraph {
+    margin-top: 0.5rem;
+    width: 90%;
+    text-align: center;
+  }
+
+  .flex {
+    margin-top: 3rem;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .flex img {
+    transform: translateX(0);
+    width: 400px;
+    padding: 1rem;
+  }
+
+  .content {
+    text-align: center;
+    width: 85%;
+  }
+
+  #clipboard {
+    margin-top: 6rem;
+  }
+
+  #clipboard h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  #clipboard-paragraph {
+    width: 80%;
+  }
+
+  #clipboard .image-device {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  #clipboard .image-device img {
+    width: 400px;
+  }
+
+  #work {
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+
+  #work h2 {
+    font-size: 29px;
+    font-weight: 600;
+  }
+
+  #work-paragraph {
+    margin-top: 0.5rem;
+    width: 90%;
+  }
+
+  .column {
+    flex-direction: column;
+  }
+
+  .column-item {
+    flex-direction: column;
+    padding: 2rem 2rem;
+  }
+
+  .column {
+    flex-direction: column;
+    padding: 2rem 2rem;
+  }
+
+  .column-item {
+    padding: 3rem 1rem;
+  }
+
+  .column-content {
+    width: 100%;
+  }
+
+  .sponsors {
+    margin-top: 2rem;
+    padding: 2rem 4rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 0 auto;
+  }
+
+  .ios {
+    padding: 5rem 2rem;
+  }
+
+  .ios h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 2rem;
+  }
+
+  .ios p {
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(201, 11%, 66%);
+    padding: 1rem 2rem;
+  }
+
+  footer.logo {
+    width: 30px;
+    margin-bottom: 1.5rem;
+  }
+
+  footer .logo img {
+    margin-left: 2rem;
+    width: 100px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .link-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    grid-column: 2rem;
+  }
+}
